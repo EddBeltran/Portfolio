@@ -109,12 +109,13 @@
         <div class="container">
             <h2 class="form__heading">Say hello!</h2>
             <p class="form__text">Send me a message and I reply soon as possible.</p>
-
-            <form action="mail.php" method="POST" class="grid">
-                <input class="email" type="email" name="email" id="email" placeholder="hey@email.com">
+            <h4 class="sent-notification"></h4>
+            <form id="myform" class="grid">
+                <input class="email" id="name" type="text" placeholder="name">
+                <input class="email" type="text" id="email" placeholder="hey@email.com">
                 <div class="input-group">
-                    <textarea class="input" name="message" id="autoresizing" placeholder="message"></textarea>
-                    <input class="btn-sent" name="submit" type="submit" value="Send">
+                    <textarea class="input" id="body" placeholder="message"></textarea>
+                    <button class="btn-sent" type="button" onclick="sendEmail()" value="Send an Email">Submit</button>
                 </div>
             </form>
         </div>
@@ -135,6 +136,40 @@
         </footer>
     </section>
 
-    <script src="vanilla.js"></script>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script type="text/javascript">
+       function sendEmail(){
+           var name = $("#name");
+           var email = $("#email");
+           var body = $("body");
+
+           if(isNotEmpty(name) && isNotEmpty(email) && isNotEmpty(body)){
+               $.ajax({
+                   url: 'sendEmail.php',
+                   method: 'POST',
+                   dataType: 'json',
+                   data: {
+                       name: name.val(),
+                       email: email.val(),
+                       body: bofy.val()
+                   },success: function(response){
+                       $('#myform')[0].reset();
+                       $('.sent-notificaton').text("Message sent successfully.");
+                   }
+               });
+           }
+       }
+       function isNotEmpty(caller){
+           if(caller.var()==""){
+               caller.css('border', '1px solid red');
+               return false;
+           }
+           else {
+               caller.css('border', '');
+               return true;
+           }
+       }
+    </script>
 </body>
 </html>
