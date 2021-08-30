@@ -108,18 +108,15 @@
     <section class="block block--primary">
         <div class="container">
             <h2 class="form__heading">Say hello!</h2>
-            <p class="form__text">Don't miss the oportunity to work together. Send me a message and I reply soon as possible.</p>
+            <p class="form__text">Send me a message and I reply soon as possible.</p>
 
-            <form class="grid" action="mail.php" method="post">
+            <form action="mail.php" method="POST" class="grid">
                 <input class="email" type="email" name="email" id="email" placeholder="hey@email.com">
                 <div class="input-group">
-                    <textarea class="input" id="autoresizing" placeholder="message"></textarea>
+                    <textarea class="input" name="message" id="autoresizing" placeholder="message"></textarea>
                     <input class="btn-sent" type="submit" value="Send">
-                    
-
                 </div>
             </form>
-
         </div>
     </section>
 
