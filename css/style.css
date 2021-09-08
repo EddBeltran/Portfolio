@@ -1,12 +1,34 @@
+:root {
+    --color-primary: #125dbe;
+    --color-secondary: #68b80c;
+    --color-accent: linear-gradient(-45deg, rgba(9,9,121,1), rgb(0, 140, 255));
+    --color-headings: #111013;
+    --color-font-dark: rgb(32, 32, 32);
+    --color-font-dark-light: rgb(77, 75, 75);
+
+  }
+  
+  *,
+  *::after,
+  *::before {
+    box-sizing: border-box;
+  }
+
 /* Default setting */
 .html {
     font-size: 62.5%;
 }
 
 
+
+
 /* Fonts */
-h1, h2, h3, h4, a, p {
-    font-family: sans-serif;
+h1 {
+    font-family: 'Montserrat', sans-serif;;
+}
+
+h2, h3, h4, a, p {
+    font-family: 'Lato', sans-serif;
 }
 
 
@@ -24,7 +46,7 @@ h1, h2, h3, h4, a, p {
 }
 
 .container {
-    max-width: 1140px;
+    max-width: 1024px;
     margin: 0 auto;
 }
 
@@ -34,7 +56,7 @@ h1, h2, h3, h4, a, p {
 }
 
 .block--primary {
-    background: rgb(8, 8, 95);
+    background: var(--color-primary);
 }
 
 /* Nav menu*/
@@ -53,18 +75,26 @@ h1, h2, h3, h4, a, p {
 
 .nav__logo {
     font-weight: 600;
+    color: var(--color-font-dark);
 }
 
 .nav__items a {
     padding-left: 1rem;
+    color: var(--color-font-dark);
 }
+
+.nav__items a:hover, .nav__logo:hover  {
+    color: var(--color-font-dark-light);
+}
+
+
 
 
 /* Hero section*/
 .hero {
     min-height: 500px;
     height: 100vh;
-    background: rgb(240, 236, 236);
+    background: #fff;
 }
 
 .hero .grid {
@@ -72,8 +102,20 @@ h1, h2, h3, h4, a, p {
 }
 
 .hero__heading {
-    font-size: 3.6rem;
+    font-size: 3.5rem;
     margin-bottom: 2rem;
+    color: var(--color-font-dark);
+}
+
+.hero__heading__hello {
+    font-size: 1.3rem;
+    display: block;
+    color: var(--color-secondary);
+}
+
+.hero__heading__profession {
+    display: block;
+    color: rgb(77, 75, 75);
 }
 
 .hero__text {
@@ -109,8 +151,9 @@ h1, h2, h3, h4, a, p {
 }
 
 .btn--primary {
-    background-image: linear-gradient(-45deg, red, rgb(255, 123, 0));
+    background: var(--color-secondary);
     color: #fff;
+    font-weight: 600;
 }
 
 
