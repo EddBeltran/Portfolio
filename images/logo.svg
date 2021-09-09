@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   viewBox="0 0 16.84 17.38"
+   version="1.1"
+   id="svg433"
+   sodipodi:docname="logo.svg"
+   inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)">
+  <metadata
+     id="metadata437">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1366"
+     inkscape:window-height="658"
+     id="namedview435"
+     showgrid="false"
+     inkscape:zoom="6.7894134"
+     inkscape:cx="-26.16497"
+     inkscape:cy="8.6899996"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="Capa_1-2" />
+  <defs
+     id="defs425">
+    <style
+       id="style423">.cls-1{fill:#0017d4;}.cls-2{fill:#00de13;}</style>
+  </defs>
+  <g
+     id="Capa_2"
+     data-name="Capa 2">
+    <g
+       id="Capa_1-2"
+       data-name="Capa 1">
+      <path
+         class="cls-1"
+         d="M16.84,3.86V13.6a3.78,3.78,0,0,1-3.78,3.78H11.74l-1.05-3.23h.68a1.91,1.91,0,0,0,1.36-.56,2,2,0,0,0,.56-1.36,1.92,1.92,0,0,0-1.92-1.92H9.44l-1-3.24h3a1.91,1.91,0,0,0,1.36-.56,2,2,0,0,0,.56-1.36,1.92,1.92,0,0,0-1.92-1.92H7.14L6.1,0H13A3.86,3.86,0,0,1,16.84,3.86Z"
+         id="path427"
+         style="fill:#333333;fill-opacity:1" />
+      <path
+         class="cls-2"
+         d="M3.56,14.15H8.9l1,3.23H0V0H4.31l1,3.23H3.56s0,0,0,0V7.06s0,0,0,0h3l1.05,3.24H3.55v3.82Z"
+         id="path429"
+         style="fill:#666666;fill-opacity:1" />
+    </g>
+  </g>
+</svg>
