@@ -15,28 +15,29 @@
 <body>
     <header class="menu">
         <nav class="nav container">
-            <a class="nav__logo" href="#"><img src="images/logo.svg" alt="aa"></a>
+            <a href="#hero"><img class="logo" src="images/logo.svg" alt="Eduardo Beltran Logo"></a>
             <div class="nav__items">
-                <a href="#">Works</a>
-                <a href="#">Contact</a>
+                <a href="#skills">Skills</a>
+                <a href="#work">Works</a>
+                <a href="#contact">Contact</a>
             </div>
         </nav>
     </header>
 
-    <section class="block hero">
+    <section class="block hero" id="hero">
         <header class="container grid grid--1x2">
             <div class="block__start">
-                <h1 class="hero__heading"><span class="hero__heading__hello">Hello world</span>I'm Eduardo, <strong class="hero__heading__profession">Web Developer.</strong></h1>
+                <h1 class="hero__heading"><span class="hero__heading__hello">Hello world</span>I'm Eduardo,<strong class="hero__heading__profession">Web Developer.</strong></h1>
                 <p class="hero__text">I build and design websites and desktop apps, focusing on performance and excellent user experience.</p>
-                <button class="btn btn--primary" href="#">Contact</button>
+                <button class="btn btn--accent" href="#contact" onclick="change_url()">Contact</button>
             </div>
             <div class="block__end">
-                <img class="block__image" src="images/hero_2.svg" alt="">
+                <img class="block__image" src="images/hero_2.svg" alt="Front-End developer illustration by Eduardo Beltran">
             </div>
         </header>
     </section>
 
-    <section class="block">
+    <section class="block block-dark">
         <div class="container">
             <h2 class="heading-section">About me</h2>
             <p class="text-section">My name is Eduardo Beltrán, I'm a Front-End Developer and Petroleum Engineer from Mexico. Let me start describing my background.</p>
@@ -45,7 +46,7 @@
                     <img src="images/code.svg" alt="#">
                 </div>
                 <div class="about__text">
-                    <p>I learned how to code in 2014 using C++, months later I jump into HTML and CSS. My passion for coding and web design had just started.</p>
+                    <p><span class="body-text-bold">My beginnings</span>I learned how to code in 2014 using C++, months later I jump into HTML and CSS. My passion for coding and web design had just started.</p>
                 </div>
             </article>
 
@@ -54,7 +55,7 @@
                     <img src="images/universidad.svg" alt="#">
                 </div>
                 <div class="about__text">
-                    <p>In 2016 I got accepted into college, meanwhile I learned responsibility, perseverance and leadership to manage projects and tasks.</p>
+                    <p><span class="body-text-bold">Education</span>In 2016 I got accepted into college, during this time I learned responsibility, perseverance and leadership to manage projects and tasks.</p>
                 </div>
             </article>
 
@@ -63,7 +64,7 @@
                     <img src="images/software.svg" alt="#">
                 </div>
                 <div class="about__text">
-                    <p>When the covid-19 pandemic arrived, I focused 100% in Python programming. So I participated in the creation of educational software helpful to simulate Petroleum Engineering processes. View more...</p>
+                    <p><span class="body-text-bold">Projects</span>When the covid-19 pandemic arrived, I focused 100% in programming. So I participated in the creation of educational software helpful to simulate Petroleum Engineering processes.</p>
                 </div>
             </article>
 
@@ -72,17 +73,28 @@
                     <img src="images/grow.svg" alt="#">
                 </div>
                 <div class="about__text">
-                    <p>Nowdays, as a Petroleum Engineer and web developer I have a bunch of things to learn, but with passion and persevernace everything is posible.</p>
+                    <p><span class="body-text-bold">Goals</span>As a big fan of Sci-Fi, I'll put extra effort learning Artificial Intelligence and share the knowledge with the community. Also I'll continue nurturing my passion for illustration and design.</p>
                 </div>
             </article>
         </div>
     </section>
 
-    
-    <section class="block">
+
+        <section class="block" id="skills">
         <div class="container">
-            <h2 class="about__heading">Skills</h2>
-            <p class="skills__text">I'm a team player, enthusiastic, creative and capable of explaining technical ideas to a Non-Technical audience. Here some technologies that I'm familiar with.</p>
+            <h2 class="heading-section">Skills</h2>
+            <p class="text-section">I'm a team player, enthusiastic, creative and capable of explaining technical ideas to a Non-Technical audience. Here some technologies that I'm familiar with.</p>
+
+        
+        
+        </div>
+        </section>
+
+    
+    <!-- <section class="block" id="skills">
+        <div class="container">
+            <h2 class="heading-section">Skills</h2>
+            <p class="text-section">I'm a team player, enthusiastic, creative and capable of explaining technical ideas to a Non-Technical audience. Here some technologies that I'm familiar with.</p>
             <div class="skills_tech grid">
                 <img src="images/html.svg" alt="">
                 <img src="images/css.svg" alt="">
@@ -100,41 +112,99 @@
                 <img src="images/ps.svg" alt="">
             </div>
         </div>
-    </section>
+    </section> -->
 
-    <section class="block">
+    <section class="block" id="work">
         <div class="container">
-            <h2 class="about__heading">Projects</h2>
-            <p class="about__text">These are my recent projects...</p>
-        </div>
-    </section>
-
-    <section class="block block--primary">
-        <div class="container">
-            <h2 class="form__heading">Say hello!</h2>
-            <p class="form__text">Send me a message and I reply soon as possible.</p>
-            <form class="grid" action="sendEmail.php" method="post">
-                <input type="text" name="name" placeholder="Full Name">
-                <input type="email" name="email" placeholder="Your email">
-                <input type="text" name="subject" placeholder="Subject">
-                <textarea name="message" placeholder="message"></textarea>
-                <button class="btn btn--primary" type="submit" name="submit">Send mail</button>
-              </form>
-
-            <!-- <h4 class="sent-notification"></h4>
-            <form id="myform" class="grid">
-                <input class="email" id="name" type="text" placeholder="name">
-                <input class="email" type="text" id="email" placeholder="hey@email.com">
-                <div class="input-group">
-                    <textarea class="input" id="body" placeholder="message"></textarea>
-                    <button class="btn-sent" type="button" onclick="sendEmail()" value="Send an Email">Submit</button>
+            <h2 class="heading-section">My work</h2>
+            <p class="text-section">These are my recent projects...</p>
+            <article class="cards">
+                
+                <div class="card">
+                    <div class="card__top">
+                        <img src="images/image-background-card2.jpg" alt="">
+                    </div>
+                    <div class="card__body">
+                        <header>
+                            <h3>Title of card 1</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        </header> 
+                    </div>
                 </div>
-            </form> -->
+
+
+                <div class="card">
+                    <div class="card__top">
+                        <img src="images/image-bike-repair-service.jpg" alt="">
+                    </div>
+                    <div class="card__body">
+                        <header>
+                            <h3>Title of card 1</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        </header> 
+                    </div>
+                </div>
+
+
+                <div class="card">
+                    <div class="card__top">
+                        <img src="images/hero.png" alt="">
+                    </div>
+                    <div class="card__body">
+                        <header>
+                            <h3>Title of card 1</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        </header> 
+                    </div>
+                </div>
+
+
+                <div class="card">
+                    <div class="card__top">
+                        <img src="images/hero.png" alt="">
+                    </div>
+                    <div class="card__body">
+                        <header>
+                            <h3>Title of card 1</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        </header> 
+                    </div>
+                </div>
+
+
+            </article>
+        </div>
+    </section>
+
+    <section class="block block--primary" id="contact">
+        <div class="container">
+            <h2 class="heading-section">Contact me</h2>
+            <p class="text-section">If you are interested in my work or have any questions about my portfolio send me an email. It will be my pleasure to answer all your questions.</p>
+            <!-- <a id="set_form_align"href="#form"></a> -->
+            <a href="#form"  id="set_form_align"></a>
+            
+            <div class="grid grid--1x2">
+                <div id="form">
+                    <form class="form" action="sendEmail.php" method="post">
+                        <input type="text" name="name" placeholder="your name" required>
+                        <input type="email" name="email" placeholder="hello@email.com" required>
+                        <textarea name="message" placeholder="message" required></textarea>
+                        <div class="submit-group">
+                            <button class="btn btn--accent btn-sent" type="submit" name="submit">Send mail</button>
+                            <p id="submit-notification"></p>
+                        </div>
+                    </form>
+                </div>
+                
+                <div class="form_image">
+                    <h4>email img</h4>
+                </div>
+            </div>
         </div>
     </section>
 
 
-    <section class="block">
+    <section class="block-footer">
         <footer class="container">
             <div class="contact__links">
                 <img src="images/linkedin.svg" alt="#">
@@ -148,40 +218,8 @@
         </footer>
     </section>
 
-    
-    <!-- <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-    <script type="text/javascript">
-       function sendEmail(){
-           var name = $("#name");
-           var email = $("#email");
-           var body = $("body");
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="scroll.js"></script>
 
-           if(isNotEmpty(name) && isNotEmpty(email) && isNotEmpty(body)){
-               $.ajax({
-                   url: 'sendEmail.php',
-                   method: 'POST',
-                   dataType: 'json',
-                   data: {
-                       name: name.val(),
-                       email: email.val(),
-                       body: bofy.val()
-                   },success: function(response){
-                       $('#myform')[0].reset();
-                       $('.sent-notificaton').text("Message sent successfully.");
-                   }
-               });
-           }
-       }
-       function isNotEmpty(caller){
-           if(caller.var()==""){
-               caller.css('border', '1px solid red');
-               return false;
-           }
-           else {
-               caller.css('border', '');
-               return true;
-           }
-       }
-    </script> -->
 </body>
 </html>
