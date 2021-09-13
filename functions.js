@@ -7,7 +7,7 @@ window.onload = function() {
   };
   
   function showEmailSent(){
-    document.getElementById("submit-notification").innerHTML = "Email sent successfully!";
+    document.getElementById("submit-notification").innerHTML = "Email sent";
     setTimeout(hideEmailSent, 5000);
   }
   
