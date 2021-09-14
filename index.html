@@ -51,36 +51,28 @@
             <h2 class="heading-section">About me</h2>
             <p class="text-section">My name is Eduardo Beltrán, I'm a Front-End Developer and Petroleum Engineer from Mexico. Let me start describing my background.</p>
             <article class="about-block">
-                <div class="about__icon">
-                    <img src="images/code.svg" alt="#">
-                </div>
+                <img class="about__icon" src="images/code.svg" alt="#">
                 <div class="about__text">
                     <p><span class="body-text-bold">My beginnings</span>I learned how to code in 2014 using C++, months later I jump into HTML and CSS. My passion for coding and web design had just started.</p>
                 </div>
             </article>
 
             <article class="about-block">
-                <div class="about__icon">
-                    <img src="images/universidad.svg" alt="#">
-                </div>
+                    <img class="about__icon" src="images/universidad.svg" alt="#">
                 <div class="about__text">
                     <p><span class="body-text-bold">Education</span>In 2016 I got accepted into college, during this time I learned responsibility, perseverance and leadership to manage projects and tasks.</p>
                 </div>
             </article>
 
             <article class="about-block">
-                <div class="about__icon">
-                    <img src="images/software.svg" alt="#">
-                </div>
+                    <img class="about__icon" src="images/software.svg" alt="#">
                 <div class="about__text">
                     <p><span class="body-text-bold">Projects</span>When the covid-19 pandemic arrived, I focused 100% in programming. So I participated in the creation of educational software helpful to simulate Petroleum Engineering processes.</p>
                 </div>
             </article>
 
             <article class="about-block">
-                <div class="about__icon">
-                    <img src="images/grow.svg" alt="#">
-                </div>
+                    <img class="about__icon" src="images/grow.svg" alt="#">
                 <div class="about__text">
                     <p><span class="body-text-bold">Goals</span>As a big fan of Sci-Fi, I'll put extra effort learning Artificial Intelligence and share the knowledge with the community. Also I'll continue nurturing my passion for illustration and design.</p>
                 </div>
@@ -125,8 +117,12 @@
 
     <section class="block" id="work">
         <div class="container">
+            <svg class="icon icon--primary">
+                <use xlink:href="sprite.svg#growth"></use>
+              </svg>
+
             <h2 class="heading-section">My work</h2>
-            <p class="text-section">These are my recent projects...</p>
+            <p class="text-section">Here you will see my recent projects...</p>
             <article class="cards">
                 
                 <div class="card">
@@ -135,7 +131,7 @@
                     </div>
                     <div class="card__body">
                             <h3>Content Management System with PHP</h3>
-                            <p>Login, share post, recibe likes and more...</p>
+                            <p>Login, share post, recibe likes and more... </p>
                     </div>
                 </div>
 
@@ -201,7 +197,7 @@
                 </div>
                 
                 <div class="form_image">
-                    <img src="email2.svg" alt="">
+                    <img src="images/email_form.svg" alt="">
                 </div>
             </div>
         </div>
@@ -211,9 +207,16 @@
     <section class="block-footer">
         <footer class="container">
             <div class="contact__links">
-                <img src="images/linkedin.svg" alt="#">
-                <img src="images/github-2.svg" alt="#">
-                <img src="images/email.svg" alt="#">
+                <a href="https://linkedin.com/in/eduardo-beltrán-1b620a213" target="_blank">
+                    <svg class="icon icon--primary">
+                        <use xlink:href="images/sprite.svg#linkedin"></use>
+                    </svg>
+                </a>
+                <a href="https://github.com/EddBeltran" target="_blank">
+                    <svg class="icon">
+                        <use xlink:href="images/sprite.svg#github"></use>
+                    </svg>
+                </a>
             </div>
             <div class="footer__copyright">
                 <p><span>Eduardo Beltrán</span>

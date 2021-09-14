@@ -203,8 +203,23 @@ h2, h3, h4, a, p {
 
 .about__icon {
     padding-right: 1.5rem;
-    align-self: center;
+    width: 60px;
+    fill: red;
 }
+
+/* Icons */
+.icon {
+    width: 30px;
+    height: 30px;
+  }
+  
+.icon--primary {
+    fill: var(--color-primary);
+  }
+  
+.icon--white {
+    fill: #fff;
+  }
 
 
 /* Skills */
@@ -230,7 +245,7 @@ h2, h3, h4, a, p {
 .cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 1rem;
+    grid-column-gap: 2rem;
     grid-row-gap: 2rem;
 }
 
@@ -271,7 +286,7 @@ h2, h3, h4, a, p {
 
 
 
-/* callout */
+/* Contact form -->DONE */
 .form {
     display: flex;
     flex-direction: column;
@@ -307,7 +322,6 @@ textarea:focus, input:focus{
     max-height: 200px;
 }
 
-
 .submit-group {
     display: flex;
     justify-content: space-between;
@@ -322,16 +336,17 @@ textarea:focus, input:focus{
 
 
 
-/* Footer */
+/* Footer -->DONE*/
 .contact__links {
     justify-content: center;
     display: flex;  
 }
 
-.contact__links img {
-    max-height: 30px;
-    padding-right: 1rem;
+.contact__links .icon {
+    margin: 0 .5rem;
+    fill: var(--color-font-dark-light);
 }
+
 
 .footer__copyright {
     text-align: center;
