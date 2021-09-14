@@ -49,7 +49,7 @@ h2, h3, h4, a, p {
 
 /* Blocks */
 .block {
-    padding: 2rem 1rem;
+    padding: 2rem 0;
 }
 
 .block-footer {
@@ -96,6 +96,10 @@ h2, h3, h4, a, p {
 
 .hero .grid {
     height: 100%;
+}
+
+.hero .container {
+    padding-top: 4rem;
 }
 
 .hero__heading {
@@ -186,15 +190,14 @@ h2, h3, h4, a, p {
     padding-bottom: 2rem;
 }
 
-.body-text-bold{
+.about__text h3 {
     font-weight: 600;
     font-size: 1.2rem;
-    display: block;
     color: var(--color-font-dark);
     padding-bottom: 0.5rem;
 }
 
-.about__text {
+.about__text p {
     font-size: 1.1rem;
     text-align: left;
     line-height: 1.2;
@@ -273,7 +276,7 @@ h2, h3, h4, a, p {
 
 .card__body h3 {
     font-size: 1.3rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.8rem;
     line-height: 1.2;
     color: var(--color-font-dark);
 }
@@ -365,10 +368,6 @@ textarea:focus, input:focus{
 /* Tablet version */
 @media screen and (max-width: 768px) {
 
-    .container {
-        padding: 0;
-    }
-
     .nav {
         padding:0.5rem 1rem;  
     }
@@ -402,6 +401,20 @@ textarea:focus, input:focus{
     }
 
 }
+
+
+/* Large Mobile version */
+@media screen and (max-width: 600px) {
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card__body {
+        height: 8rem;
+    }
+
+}
+
 
 
 /* Mobile version */
