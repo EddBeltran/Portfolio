@@ -37,7 +37,7 @@
             <div class="block__start">
                 <h1 class="hero__heading"><span class="hero__heading__hello">Hello world</span>I'm Eduardo,<strong class="hero__heading__profession">Web Developer.</strong></h1>
                 <p class="hero__text">I build and design websites and desktop apps, focusing on performance and excellent user experience.</p>
-                <a class="btn btn--accent" href="#contact">Contact</a>
+                <a class="btn btn--primary" href="#contact">Contact</a>
             </div>
             <div class="block__end">
                 <img class="block__image" src="images/hero_image.svg" alt="Front-End developer illustration by Eduardo Beltran">
@@ -49,29 +49,45 @@
         <div class="container">
             <h2 class="heading-section">About me</h2>
             <p class="text-section">My name is Eduardo Beltrán, I'm a Front-End Developer and Petroleum Engineer from Mexico. Let me start describing my background.</p>
-            <article class="about-block">
-                <img class="about__icon" src="images/code.svg" alt="my first line of code svg icon">
+            <article class="about-block">                
+                <div class="about__icon">
+                    <svg class="icon--big">
+                        <use xlink:href="images/sprite.svg#code"></use>
+                    </svg>
+                </div>
                 <div class="about__text">
                     <h3>My beginnings</h3>
                     <p>I learned how to code in 2014 using C++, months later I jump into HTML and CSS. My passion for coding and web design had just started.</p>
                 </div>
             </article>
             <article class="about-block">
-                    <img class="about__icon" src="images/universidad.svg" alt="icono de universidad">
+                <div class="about__icon">
+                    <svg class="icon--big">
+                        <use xlink:href="images/sprite.svg#universidad"></use>
+                    </svg>
+                </div>
                 <div class="about__text">
                     <h3>Education</h3>
                     <p>In 2016 I got accepted into college, during this time I learned responsibility, perseverance and leadership to manage projects and tasks.</p>
                 </div>
             </article>
             <article class="about-block">
-                    <img class="about__icon" src="images/software.svg" alt="software svg icon">
+                <div class="about__icon">
+                    <svg class="icon--big">
+                        <use xlink:href="images/sprite.svg#software"></use>
+                    </svg>
+                </div>
                 <div class="about__text">
                     <h3>Projects</h3>
                     <p>When the covid-19 pandemic arrived, I focused 100% in programming. So I participated in the creation of educational software helpful to simulate Petroleum Engineering processes.</p>
                 </div>
             </article>
             <article class="about-block">
-                    <img class="about__icon" src="images/grow.svg" alt="growing icon">
+                <div class="about__icon">
+                    <svg class="icon--big">
+                        <use xlink:href="images/sprite.svg#grow"></use>
+                    </svg>
+                </div>
                 <div class="about__text">
                     <h3>Goals</h3>
                     <p>As a big fan of Sci-Fi, I'll put extra effort learning Artificial Intelligence and share the knowledge with the community. Also I'll continue nurturing my passion for illustration and design.</p>
@@ -83,14 +99,74 @@
     <section class="block" id="skills">
         <div class="container">
             <h2 class="heading-section">Skills</h2>
-            <p class="text-section">I'm a team player, enthusiastic, creative and capable of explaining technical ideas to a Non-Technical audience. Here some technologies that I'm familiar with.</p>        
+            <p class="text-section"></p>        
+            <div class="grid grid--1x3 skills">
+                <div class="skills__card">
+                    <div class="skills__card__heading">
+                        <h3>Interpersonal</h3>
+                        <svg class="icon">
+                            <use xlink:href="images/sprite.svg#network"></use>
+                        </svg>
+                    </div>
+                    <ul>
+                        <li>Teamwork</li>
+                        <li>Leadership</li>
+                        <li>Creativity</li>
+                        <li>Responsibility</li>
+                        <li>Empathy</li>
+                        <li>Problem solving</li>
+                        <li>Tilingual (Spanish, English, Italian)</li>
+                    </ul>
+                </div>
+    
+                <div class="skills__card">
+                    <div class="skills__card__heading">
+                        <h3>Programming</h3>
+                        <svg class="icon">
+                            <use xlink:href="images/sprite.svg#web-programming"></use>
+                        </svg>
+                    </div>
+                    <ul class="skills__card__programming">
+                        <li>Front-End</li>
+                        <ul>
+                            <li>HTML, CSS, Javascript, React, JQuery, Bootstrap</li>
+                        </ul>
+                        <li>Back-End</li>
+                        <ul>
+                            <li>Php, Django, Mysql, Git</li>
+                        </ul>
+                        <li>Advanced programming</li>
+                        <ul>
+                            <li>Numerical simulation, Artificial Intelligence</li>
+                        </ul>
+                    </ul>
+                </div>
+    
+                <div class="skills__card">
+                    <div class="skills__card__heading">
+                        <h3>Extra Skills</h3>
+                        <svg class="icon">
+                            <use xlink:href="images/sprite.svg#international-business"></use>
+                        </svg>
+                    </div>
+                    <ul>
+                        <li>UX/UI</li>
+                        <li>Graphic Design</li>
+                        <li>Project Management</li>
+                        <li>Economic Modeling</li>
+                        <li>Petroleum Engineering Analysis</li>
+                    </ul>
+                </div>
+            </div>
+
         </div>
     </section>
 
     <section class="block" id="work">
         <div class="container">
             <h2 class="heading-section">My work</h2>
-            <p class="text-section">Here you will see my recent projects...</p>
+            <p class="text-section"></p>
+            
             <article class="cards">  
                 <div class="card">
                     <div class="card__top">
@@ -114,7 +190,7 @@
                 </div>
                 <div class="card">
                     <div class="card__top">
-                        <img src="images/hero.png" alt="">
+                        <img src="images/image-background-card2.jpg" alt="">
                     </div>
                     <div class="card__body">
                         <header>
@@ -125,7 +201,7 @@
                 </div>
                 <div class="card">
                     <div class="card__top">
-                        <img src="images/hero.png" alt="">
+                        <img src="images/image-background-card2.jpg" alt="">
                     </div>
                     <div class="card__body">
                         <header>
@@ -150,13 +226,13 @@
                         <input type="email" name="email" placeholder="hello@email.com" required>
                         <textarea name="message" placeholder="message" required></textarea>
                         <div class="submit-group">
-                            <button class="btn btn--accent btn-sent" type="submit" name="submit">Send mail</button>
+                            <button class="btn btn--primary btn-sent" type="submit" name="submit">Send mail</button>
                             <p id="submit-notification"></p>
                         </div>
                     </form>
                 </div>         
                 <div class="form_image">
-                    <img src="images/email_form.svg" alt="">
+                    <img src="images/email_form.svg" alt="Email form illustration">
                 </div>
             </div>
         </div>

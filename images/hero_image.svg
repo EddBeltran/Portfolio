@@ -10,7 +10,7 @@
    viewBox="0 0 269.99999 240.95"
    version="1.1"
    id="svg346"
-   sodipodi:docname="hero_2.svg"
+   sodipodi:docname="hero_image.svg"
    inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)"
    width="270"
    height="240.95">
@@ -22,7 +22,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -39,8 +39,8 @@
      inkscape:window-height="658"
      id="namedview348"
      showgrid="false"
-     inkscape:zoom="1.3851605"
-     inkscape:cx="135.56184"
+     inkscape:zoom="0.97945638"
+     inkscape:cx="86.208054"
      inkscape:cy="133.62015"
      inkscape:window-x="0"
      inkscape:window-y="27"
@@ -258,7 +258,7 @@
          cy="104.91"
          r="6.5100002"
          id="circle334"
-         style="fill:#3ecf00;fill-opacity:1" />
+         style="fill:#0000ff;fill-opacity:1" />
       <path
          class="cls-15"
          d="m 87.34,102.62 v 4.62 A 1.79,1.79 0 0 1 85.55,109 h -0.63 l -0.5,-1.53 h 0.33 a 0.93,0.93 0 0 0 0.64,-0.26 1,1 0 0 0 0.27,-0.65 0.91,0.91 0 0 0 -0.91,-0.91 h -0.92 l -0.5,-1.53 h 1.42 a 0.89,0.89 0 0 0 0.64,-0.27 0.94,0.94 0 0 0 0.27,-0.65 0.91,0.91 0 0 0 -0.91,-0.91 h -2 l -0.49,-1.53 h 3.26 a 1.83,1.83 0 0 1 1.82,1.86 z"
