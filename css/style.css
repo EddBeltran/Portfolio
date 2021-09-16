@@ -1,11 +1,11 @@
 :root {
     
     --color-primary: #125dbe;
+    --color-secondary: #D3A517;
+    --color-tertiary: #E6F4F1;
+    --color-primary-hover:#487AE0;
     --color-font-dark: rgb(32, 32, 32);
     --color-font-dark-light: rgb(77, 75, 75);
-    /* --color-primary: #02295c; */
-    /* --color-accent: #68b80c; */
-    /* --color-accent: #125dbe; */
 
   }
   
@@ -23,6 +23,7 @@
 /* Fonts */
 h1 {
     font-family: 'Montserrat', sans-serif;
+    color: var(--color-font-dark);
 }
 
 h2, h3, h4, a, p, ul {
@@ -62,7 +63,7 @@ h2, h3, h4, a, p, ul {
 .block-footer {
     margin-top: 2rem;
     padding: 1rem 1rem;
-    background: lightgrey;
+    background: var(--color-tertiary);
 }
 
 /* Nav menu*/
@@ -71,6 +72,7 @@ h2, h3, h4, a, p, ul {
     position: fixed;
     width: 100%;
     box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    z-index: 5;
 }
 
 .nav {
@@ -164,14 +166,13 @@ h2, h3, h4, a, p, ul {
     font-weight: 600;
 }
 
-.btn--accent {
-    background: var(--color-accent);
-    color: #fff;
-    font-weight: 600;
+.btn--primary:hover {
+    background: var(--color-primary-hover);
 }
 
-.btn--primary:hover {
-    background: #226ac7;
+.links {
+    color: var(--color-secondary);
+    font-weight: bold;
 }
 
 
@@ -180,7 +181,7 @@ h2, h3, h4, a, p, ul {
     text-align: center;
     font-size: 2.8rem;
     padding-bottom: 2rem;
-    color: var(--color-font-dark);
+    color: var(--color-font-dark-light);
 }
 
 .text-section {
@@ -194,7 +195,7 @@ h2, h3, h4, a, p, ul {
 /* About me section */
 .about-block {
     display: flex;
-    padding-bottom: 2rem;
+    padding-bottom: 1.2rem;
 }
 
 .about__text h3 {
@@ -237,17 +238,18 @@ h2, h3, h4, a, p, ul {
 
 
 /* Skills */
-.skills {
-    column-gap: 1rem;
+.cards {
+    gap: 1.5rem 1rem;
 }
 
 .skills__card {
+    border-radius: 5px;
     width: 100%;
     padding: 1rem 1rem;
     text-align: left;
     line-height: 1.4;
     margin-right: 1rem;
-    border: solid 2px lightgray;
+    border: solid 2px var(--color-tertiary);
 }
 
 .skills__card__heading {
@@ -278,24 +280,41 @@ h2, h3, h4, a, p, ul {
 
 
 /* MY WORK */
-.cards {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 2rem;
-    grid-row-gap: 2rem;
-}
 
-.card {
-    border-radius: 10px;
+.work__card {
+    border-radius: 5px;
     width: 100%;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
-    overflow: hidden;
-    /* max-width: 250px; */
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+
 }
 
-.card__top img {
+.work__card__heading:hover {
+    background: var(--color-primary-hover);
+}
+
+.work__card img {
+    width: 100%;
+    height: 15rem;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.work__card__heading {
+    padding: 1rem;
+    font-size: 1.2rem;
+    background-color: var(--color-primary);
+    height: 100%;
+    z-index: 4;
+}
+
+.work__card__heading h3 {
+    color: #fff;
+}
+
+
+/* .card__top img {
     width: 100%;
     object-fit: cover;
     height: 15rem;
@@ -317,7 +336,11 @@ h2, h3, h4, a, p, ul {
 .card__body p {
     font-size: 1.1rem;
     color: var(--color-font-dark-light);
-}
+} */
+
+
+
+
 
 
 
@@ -335,7 +358,7 @@ input[type=text], input[type=email], textarea {
     font-size: 1.1rem;
     margin-bottom: 1rem;
     border: 0;
-    background: rgb(226, 224, 224);
+    background: var(--color-tertiary);
     border-radius: 30px;
 }
 textarea {
@@ -370,8 +393,6 @@ textarea:focus, input:focus{
 }
 
 
-
-
 /* Footer -->DONE*/
 .contact__links {
     justify-content: center;
@@ -380,9 +401,8 @@ textarea:focus, input:focus{
 
 .contact__links .icon {
     margin: 0 .5rem;
-    fill: var(--color-font-dark-light);
+    fill: var(--color-primary);
 }
-
 
 .footer__copyright {
     text-align: center;
@@ -397,6 +417,7 @@ textarea:focus, input:focus{
     font-weight: 600;
     padding: 1rem 0 0.5rem 0;
 }
+
 
 /* Tablet version */
 @media screen and (max-width: 768px) {
@@ -428,30 +449,11 @@ textarea:focus, input:focus{
         grid-template-columns: repeat(2,1fr);
     }
 
-    .skills {
-        gap: 1.5rem;
-    }
-
     .form_image {
         display: none;
     }
 
 }
-
-
-/* Large Mobile version */
-@media screen and (max-width: 600px) {
-    .cards {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .card__body {
-        height: 8rem;
-    }
-
-}
-
-
 
 /* Mobile version */
 @media screen and (max-width: 450px) {
@@ -459,20 +461,8 @@ textarea:focus, input:focus{
         padding-top: 4.5rem;
     }
 
-    .cards {
-        grid-template-columns: repeat(1, 1fr);
-    }
-
-    .card__body {
-        height: 8rem;
-    }
-
     .grid--1x3 {
         grid-template-columns: repeat(1,1fr);
-    }
-
-    .skills {
-        gap: 1.5rem;
     }
 
 }
