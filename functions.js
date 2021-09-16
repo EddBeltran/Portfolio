@@ -43,7 +43,7 @@ window.onload = function() {
   
   const form = document.getElementById('form');
   form.addEventListener('focus', (event) => {
-    event.target.style.background = '#E3F2FF';
+    event.target.style.background = '#e4e0e0';
     document.getElementById("set_form_align").click();
   }, true);
   
