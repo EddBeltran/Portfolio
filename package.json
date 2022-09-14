@@ -1,15 +1,23 @@
 {
-  "name": "portafolio",
+  "name": "8-portfolio",
   "version": "1.0.0",
   "description": "",
-  "main": "vanilla.js",
+  "main": "functions.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EddBeltran/Portfolio.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EddBeltran/Portfolio/issues"
+  },
+  "homepage": "https://github.com/EddBeltran/Portfolio#readme",
   "devDependencies": {
-    "parcel-bundler": "^1.12.3"
+    "parcel": "^2.7.0"
   }
 }
