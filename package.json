@@ -1,9 +1,11 @@
 {
-  "name": "eddPortfolio",
-  "version": "1.0.0",
-  "main": "index.js",
-  "license": "MIT",
-  "dependencies": {
-    "parcel": "^2.7.0"
+  "name": "edd-portfolio",
+  "source": "src/index.html",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "devDependencies": {
+    "parcel": "latest"
   }
 }
